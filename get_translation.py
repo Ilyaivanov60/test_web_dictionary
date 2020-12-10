@@ -15,7 +15,7 @@ def get_translate():
 
     headers = {'Authorization': 'Bearer ' + get_token()}
     params = {
-        'text': input('ввидите слово для перевода: '),
+        'text': 'dog',
         'srcLang': 1033,
         'dstLang': 1049
     }
@@ -23,7 +23,4 @@ def get_translate():
     print(req.status_code)
     print(req.headers["Content-Type"])
     date = req.json()
-    print(date['Translation']['Translation'])
-
-if __name__ == "__main__":
-    get_translate()
+    return date['Translation']['Translation']
