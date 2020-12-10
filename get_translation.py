@@ -20,7 +20,5 @@ def get_translate():
         'dstLang': 1049
     }
     req = requests.get(settings.url_translate, headers=headers, params=params)
-    print(req.status_code)
-    print(req.headers["Content-Type"])
     date = req.json()
     return date['Translation']['Translation']
