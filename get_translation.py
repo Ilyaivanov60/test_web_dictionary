@@ -15,7 +15,7 @@ def get_translate():
 
     headers = {'Authorization': 'Bearer ' + get_token()}
     params = {
-        'text': 'dog',
+        'text': input('ввидите слово для перевода: '),
         'srcLang': 1033,
         'dstLang': 1049
     }
