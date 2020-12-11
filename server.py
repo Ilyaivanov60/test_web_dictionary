@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    translate_word = get_translate('cat')
+    translate_word = get_translate('elephant')
     return render_template('index.html', translate_word=translate_word)
 
 
