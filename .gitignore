@@ -5,6 +5,7 @@ __pycache__/
 
 #API for Abby_lingua
 settings.py
+.idea
 
 # vevn
 env

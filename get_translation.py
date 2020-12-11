@@ -11,11 +11,11 @@ def get_token():
     else:
         return "не правиьлный запрос aut_Token"
 
-def get_translate():
+def get_translate(word):
 
     headers = {'Authorization': 'Bearer ' + get_token()}
     params = {
-        'text': 'dog',
+        'text': word,
         'srcLang': 1033,
         'dstLang': 1049
     }
