@@ -12,6 +12,10 @@
   </head>
   <body>
     <h1>{{ translate_word }}!</h1>
+    <form method="post" action="/add_word">
+      <input type="text" name="word">
+      <button type="submit">Translate word</button>
+    </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
